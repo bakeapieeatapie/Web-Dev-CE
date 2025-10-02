@@ -1,0 +1,42 @@
+body {
+    font-family: "Oswald", serif;
+}
+
+/* header stuff here */
+header {
+    background-color: #eaeaea;
+    padding: 1rem 10px;
+}
+header span {
+    color: #3359c2; 
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+
+nav {
+    background-color: #F2b705;
+}
+nav ul {
+    margin: 0;
+    padding: 0 10px;
+    list-style-type: none;
+    display: flex;
+}
+nav a {
+    display: block;
+    padding: .83rem 1rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #3359c2;
+    
+}
+
+nav li.active a {
+    background-color: #3359c2;
+    color: #F2b705;
+}
+
+nav li a:hover {
+    color: white;
+}
