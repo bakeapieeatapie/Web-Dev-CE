@@ -1,0 +1,70 @@
+body {
+    font-family: "Oswald", serif;
+    color: rgb(59, 59, 59);
+}
+
+/* header stuff here */
+header {
+    background-color: #c0c7de;
+    padding: 1rem 10px;
+}
+header span {
+    color: #010beb; 
+    font-size: 1.6rem;
+    font-weight: 700;
+   
+}
+
+
+nav {
+    background-color: #f04346cb;
+}
+nav ul {
+    margin: 0;
+    padding: 10 10px;
+    list-style-type: none;
+    display: flex;
+    border: 2px solid rgb(95, 94, 92)
+    
+}
+nav a {
+    display: block;
+    padding: .23rem 1rem;
+    text-decoration: none;
+    font-size: 1.1rem;
+    color: #3359c2;
+    
+}
+
+nav li.active a {
+    background-color: #3359c2;
+    color: #F2b705;
+}
+
+nav li a:hover {
+    color: white;
+}
+footer {
+    text-align: center;
+    background-color: #c0c7de;
+}
+p a:hover {
+    color: rgb(128, 121, 121);
+}
+main address a:hover {
+    color: #6d6767;
+}
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 16px;
+    gap: 20px 10px;
+}
+div.gallery figure {
+    margin: 0;
+}
+div.gallery {
+    text-align: center;
+    font-size: .8rem;
+    color: rgb(59, 59,59);
+}
