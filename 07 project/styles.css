@@ -1,34 +1,37 @@
-
-*{box-sizing: border-box;}
-
-
-
+* {
+    box-sizing: border-box;
+}
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: "Oswald", serif;
     font-weight: 300;
     margin: 0;
     font-size: 16px;
+    color: rgb(59, 59, 59);
 }
-/* header stuff here */
+
+/* HEADER */
 header {
+    background-color: #c0c7de;
     padding: 1rem 2vw;
 }
 header span {
-    margin: 0;
-    color: #895772;
+    color: #010beb;
     font-size: 2rem;
     font-weight: 700;
 }
 header p {
     margin: 0;
-    color: #895772;
+    color: #010beb;
     font-size: 1.22rem;
     letter-spacing: 2px;
 }
 
-/* small screen navigation */
+/* SMALL SCREEN NAVIGATION */
 @media only screen and (max-width: 800px) {
+    nav {
+        background-color: #f04346cb;
+    }
     nav ul {
         margin: 0;
         padding: 0;
@@ -37,127 +40,140 @@ header p {
         display: block;
         text-align: center;
         padding: .8rem;
-        color: #8c501b;
+        color: #3359c2;
         text-decoration: none;
-        border-bottom: solid 1px #eee;
         font-weight: 700;
         text-transform: uppercase;
+        border-bottom: solid 1px #eee;
     }
     nav .active a {
-        background-color: #8c501b;
+        background-color: #3359c2;
+        color: #f2b705;
+    }
+    nav a:hover {
         color: white;
-        background-image: linear-gradient(to bottom, #8b5022, #663b19);
     }
+}
 
-} /*end small creen nav */
-    
-
-/* large screen nav*/
+/* LARGE SCREEN NAVIGATION */
 @media only screen and (min-width: 801px) {
-        nav {
-        border-top: solid 1px #e0e6e6;
-
+    nav {
+        background-color: #f04346cb;
+        border-top: solid 1px rgb(95, 94, 92);
     }
+
     nav ul {
         margin: 0;
         padding: 0 2vw;
         list-style-type: none;
         display: flex;
+        border: 2px solid rgb(95, 94, 92);
     }
+
     nav a {
         display: block;
         padding: 1.2rem 1rem .3rem 1rem;
         font-size: 1rem;
         text-decoration: none;
-        color: #8c501b;
-        font-weight: 600;
+        color: #3359c2;
         text-transform: uppercase;
         text-align: center;
-        border-bottom: solid 2px #fff;
+        border-bottom: solid 2px transparent;
     }
+
     nav .active a {
-        border-bottom: solid 2px #8b5022;
+        background-color: #3359c2;
+        color: #f2b705;
     }
+
     nav a:hover {
-        color: #000
+        color: white;
     }
-    
-} /*end large creen nav */
+}
 
-
-
-
-
-
-/*main stuff here*/
+/* MAIN CONTENT */
 main {
     padding: 1rem 2vw;
 }
 
 main h1 {
-    color: #8b5022;
+    color: #3359c2;
     font-size: 2.5rem;
     margin: .5rem 0 .8rem 0;
     font-weight: 200;
 }
 main h2 {
-    color: #8b5022;
+    color: #3359c2;
     margin-bottom: .2rem;
 }
 main p {
-    color: #333;
     margin: 0 0 .8rem 0;
     line-height: 150%;
     font-size: 1.2rem;
 }
-main a {
-    color: #9c3335;
+main a:hover {
+    color: rgb(128, 121, 121);
 }
 
+/* HERO IMAGE */
 .hero {
     width: 100%;
     height: auto;
 }
 
-.angeloGallery {
+/* GALLERY */
+div.gallery {
     display: flex;
     flex-wrap: wrap;
-} 
-.angeloGallery section {
+    gap: 20px 10px;
+    column-gap: 16px;
+    text-align: center;
+    font-size: .8rem;
+    color: rgb(59, 59, 59);
+}
+
+div.gallery figure {
+    margin: 0;
     flex-basis: 50%;
-    margin: 1rem 0;
-    
 }
-.angeloGallery span {
-    display: block;
-    text-align: center; 
-    font-weight: 700;
-    color: #895772;
-}
-.angeloGallery img {
+
+div.gallery img {
     width: 98%;
     height: auto;
     border-radius: 5px;
 }
 
-.angeloGallery img:hover {
- box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+div.gallery img:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+div.gallery span {
+    display: block;
+    font-weight: 700;
+    color: #3359c2;
 }
 
 
-/* footer stuff here */
+/* FOOTER */
 footer {
-    border-top: solid #895772 1px;
+    border-top: solid 1px #010beb;
     text-align: center;
-    color: #8b5022;
+    background-color: #c0c7de;
+    color: rgb(59, 59, 59);
     font-size: .8rem;
     padding: 1rem 0;
     clear: both;
 }
+
 footer a {
-    color: #8b5022;
+    color: #3359c2;
 }
 
+main address a:hover {
+    color: #6d6767;
+}
+
+/* PAGE WIDTH */
 header, nav, main, footer {
     max-width: 64rem;
     margin: 0 auto;
