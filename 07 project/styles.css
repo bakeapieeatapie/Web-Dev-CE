@@ -30,7 +30,7 @@ header p {
 /* SMALL SCREEN NAVIGATION */
 @media only screen and (max-width: 800px) {
     nav {
-        background-color: #f04346cb;
+        background-color: #ffffffcb;
     }
     nav ul {
         margin: 0;
@@ -47,27 +47,29 @@ header p {
         border-bottom: solid 1px #eee;
     }
     nav .active a {
-        background-color: #3359c2;
-        color: #f2b705;
+        background-color: #f04346cb;
+        color: rgb(241, 199, 143);
+        background-image: linear-gradient(to bottom, #f04346cb,rgb(192, 49, 49) );
     }
     nav a:hover {
-        color: white;
+        color: rgb(188, 209, 248);
     }
 }
 
 /* LARGE SCREEN NAVIGATION */
 @media only screen and (min-width: 801px) {
     nav {
-        background-color: #f04346cb;
-        border-top: solid 1px rgb(95, 94, 92);
+        background-color: white;
+        border-top: solid 0.001px #fff;
+         
     }
 
     nav ul {
         margin: 0;
-        padding: 0 2vw;
+        padding: 0;
         list-style-type: none;
         display: flex;
-        border: 2px solid rgb(95, 94, 92);
+        border: 0px solid #fff;
     }
 
     nav a {
@@ -82,12 +84,13 @@ header p {
     }
 
     nav .active a {
-        background-color: #3359c2;
-        color: #f2b705;
+        background-color: #f04346cb;
+        color: rgb(241, 199, 143);
+        background-image: linear-gradient(to bottom, #f04346cb,rgb(192, 49, 49) );
     }
 
     nav a:hover {
-        color: white;
+         color: rgb(188, 209, 248);
     }
 }
 
