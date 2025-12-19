@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Skate&Ski.co</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jacquard+12&family=Oswald:wght@200..700&family=UnifrakturCook:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- start the page header -->
+    <header>
+        <span>Mountain Ski Adventures</span>
+    </header>
+
+    <!-- start the page navigation -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+
+            <li><a href="skiskate.html">History</a></li>
+            
+            <li><a href="gallery.html">Gallery</a></li>
+
+            <li><a href="shop.html">Shop</a></li>
+
+            <li><a href="deliverybot.html">reservation</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- start the page main -->
+    <main>
+        <h1>Delivery Request</h1>
+        <form method="get" class="myForm" action="thanks.html">
+            <fieldset>
+            <legend>Customer Information</legend>    
+            <label>First Name*<input type="text" name="fname" required></label>
+            <label>last Name*<input type="text" name="lname" required></label>
+            <label>Cell Number*<input type="tel" name="phone" required placeholder="987-555-1234"></label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Ways of Delivery</legend>
+                </label><input type="radio" name="method" value="train">train Delivery (2hrs)<label>
+                </label><input type="radio" name="method" value="Animal">Animal Delivery (4hrs)</label>
+                </label><input type="radio" name="method" value="bike">bike Delivery (6hrs)</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Delivery locations</legend>
+                <label><input type="checkbox" name="porch" value="chosen"> Front Porch</label>
+                <label><input type="checkbox" name="deck" value="chosen"> Back Deck</label>
+                <label><input type="checkbox" name="Driveway" value="chosen"> Driveway</label>
+                <label><input type="checkbox" name="Inside the Garage" value="chosen"> Inside the Garage</label>
+
+                <label>Preferred Delivery Time
+                <select name="time">
+                    <option value="none">please Select</option>
+                    <option value="morning">Between 7:00am and 11:00am</option>
+                    <option value="noon">Between 11:00am and 2:00pm </option>
+                    <option value="afternoon">Between 2:00pm and 5:00pm </option>
+                    <option value="evening">Between 5:00pm and 8:00pm </option>
+                </select>
+                </label>
+            </fieldset>
+
+            <label>Comments
+                <textarea name="Comments"></textarea>
+            </label>
+
+
+
+            <input type="submit" value="Send Delivery Request">
+        </form>
+    </main>

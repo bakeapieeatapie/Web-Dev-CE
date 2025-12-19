@@ -1,0 +1,183 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Oswald", serif;
+    font-weight: 300;
+    margin: 0;
+    font-size: 16px;
+    color: rgb(59, 59, 59);
+}
+
+/* HEADER */
+header {
+    background-color: #c0c7de;
+    padding: 1rem 2vw;
+}
+header span {
+    color: #010beb;
+    font-size: 2rem;
+    font-weight: 700;
+}
+header p {
+    margin: 0;
+    color: #010beb;
+    font-size: 1.22rem;
+    letter-spacing: 2px;
+}
+
+/* SMALL SCREEN NAVIGATION */
+@media only screen and (max-width: 800px) {
+    nav {
+        background-color: #ffffffcb;
+    }
+    nav ul {
+        margin: 0;
+        padding: 0;
+    }
+    nav a {
+        display: block;
+        text-align: center;
+        padding: .8rem;
+        color: #3359c2;
+        text-decoration: none;
+        font-weight: 700;
+        text-transform: uppercase;
+        border-bottom: solid 1px #eee;
+    }
+    nav .active a {
+        background-color: #f04346cb;
+        color: rgb(241, 199, 143);
+        background-image: linear-gradient(to bottom, #f04346cb,rgb(192, 49, 49) );
+    }
+    nav a:hover {
+        color: rgb(188, 209, 248);
+    }
+}
+
+/* LARGE SCREEN NAVIGATION */
+@media only screen and (min-width: 801px) {
+    nav {
+        background-color: white;
+        border-top: solid 0.001px #fff;
+         
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        display: flex;
+        border: 0px solid #fff;
+    }
+
+    nav a {
+        display: block;
+        padding: 1.2rem 1rem .3rem 1rem;
+        font-size: 1rem;
+        text-decoration: none;
+        color: #3359c2;
+        text-transform: uppercase;
+        text-align: center;
+        border-bottom: solid 2px transparent;
+    }
+
+    nav .active a {
+        background-color: #f04346cb;
+        color: rgb(241, 199, 143);
+        background-image: linear-gradient(to bottom, #f04346cb,rgb(192, 49, 49) );
+    }
+
+    nav a:hover {
+         color: rgb(188, 209, 248);
+    }
+}
+
+/* MAIN CONTENT */
+main {
+    padding: 1rem 2vw;
+}
+
+main h1 {
+    color: #3359c2;
+    font-size: 2.5rem;
+    margin: .5rem 0 .8rem 0;
+    font-weight: 200;
+}
+main h2 {
+    color: #3359c2;
+    margin-bottom: .2rem;
+}
+main p {
+    margin: 0 0 .8rem 0;
+    line-height: 150%;
+    font-size: 1.2rem;
+}
+main a:hover {
+    color: rgb(128, 121, 121);
+}
+
+/* HERO IMAGE */
+.hero {
+    width: 100%;
+    height: auto;
+}
+
+/* GALLERY */
+div.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px 10px;
+    column-gap: 16px;
+    text-align: center;
+    font-size: .8rem;
+    color: rgb(59, 59, 59);
+}
+
+div.gallery figure {
+    margin: 0;
+    flex-basis: 50%;
+}
+
+div.gallery img {
+    width: 98%;
+    height: auto;
+    border-radius: 5px;
+}
+
+div.gallery img:hover {
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+div.gallery span {
+    display: block;
+    font-weight: 700;
+    color: #3359c2;
+}
+
+
+/* FOOTER */
+footer {
+    border-top: solid 1px #010beb;
+    text-align: center;
+    background-color: #c0c7de;
+    color: rgb(59, 59, 59);
+    font-size: .8rem;
+    padding: 1rem 0;
+    clear: both;
+}
+
+footer a {
+    color: #3359c2;
+}
+
+main address a:hover {
+    color: #6d6767;
+}
+
+/* PAGE WIDTH */
+header, nav, main, footer {
+    max-width: 64rem;
+    margin: 0 auto;
+}
